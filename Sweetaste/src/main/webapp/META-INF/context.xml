@@ -1,0 +1,14 @@
+<Context>
+
+  <Resource name="jdbc/sweetast"
+            auth="Container"
+            type="javax.sql.DataSource"
+            driverClassName="com.mysql.cj.jdbc.Driver"
+            url="jdbc:mysql://localhost:3306/sweetast?serverTimezone=Asia/Taipei&amp;useSSL=false"
+            username="root"
+            password="12345678"
+            maxTotal="20"
+            maxIdle="10"
+            maxWaitMillis="-1" />
+
+</Context>

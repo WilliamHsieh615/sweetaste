@@ -40,7 +40,7 @@ Sweetaste 是一個甜點購物網站，結合現代化前端技術與 Java 後�
 
 ## 頁面預覽
 
-說明：GitHub Pages 僅支援 HTML、CSS、JavaScript 等前端靜態資源的部署，無法運行 Java 後端程式
+說明：GitHub Pages 僅支援 HTML、CSS、JavaScript 等前端靜態資源的部署，無法運行 Java 後端程式，以下提供靜態網站預覽，其他後端功能會以圖片方式說明
 
 🔗 [靜態網站預覽](https://williamhsieh615.github.io/Sweetaste/Sweetaste-Static%20Website/html/index.html)
 

@@ -1,0 +1,123 @@
+@use 'variables' as vars;
+
+.transactionDetail {
+    width: 300px;
+    color: vars.$quaternary-color;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+
+    h3 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 20px;
+        background: vars.$primary-color;
+        padding: 16px 0;
+        text-align: center;
+    }
+
+    .order {
+        border: 1px solid vars.$primary-color;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order_container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 16px 20px;
+    }
+
+    .subtotal,
+    .freight,
+    .total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid vars.$primary-color;
+    }
+
+    .subtotal,
+    .freight {
+        font-weight: 300;
+        line-height: 20px;
+    }
+
+    .total {
+        margin-top: 8px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .list {
+        border: 1px solid vars.$primary-color;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .item_container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px 20px;
+    }
+
+    .item {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+
+        img {
+            width: 120px;
+            aspect-ratio: 3 / 2;
+            object-fit: cover;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        h4 {
+            font-weight: 300;
+            line-height: 20px;
+        }
+
+        .price,
+        .amount {
+            font-weight: 300;
+        }
+
+        .sum {
+            width: 100%;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    .transactionDetail {
+        width: 100%;
+        gap: 0;
+        display: none;
+
+        &.showList {
+            display: flex;
+        }
+
+        .item {
+            margin: 0 auto;
+            width: 260px;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@use 'variables' as vars;
+
+@use 'cssReset';
+@use 'common';
+@use 'header';
+@use 'footer';
+@use 'index';
+@use 'product';
+@use 'member';
+@use 'login';
+@use 'registerAndRetrieve';
+@use 'verify';
+@use 'cart';
+@use 'aside';
+@use 'checkout-delivery';
+@use 'checkout-payment';
+@use 'checkout-invoice';
+@use 'checkout';
+@use 'checkout-payment_success';
+
+:root {
+  --primary-animation: shiny 1.5s infinite;
+}
+
+@keyframes shiny {
+  0%, 100% {
+    color: vars.$primary-color;
+  }
+  50% {
+    color: vars.$secondary-color;
+  }
+}
+
+
+
+

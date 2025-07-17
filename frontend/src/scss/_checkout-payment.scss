@@ -1,0 +1,94 @@
+@use 'variables' as vars;
+
+.checkout-payment_main {
+    form {
+        .input_container {
+            max-width: 100%;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin: 0 40px;
+
+            label {
+                color: vars.$primary-color;
+                font-size: 20px;
+                line-height: 20px;
+                font-weight: 600;
+            }
+
+            input {
+                height: 56px;
+                background: vars.$primary-color;
+                color: vars.$quaternary-color;
+                padding: 0 16px;
+            }
+
+            input::placeholder {
+                color: vars.$quaternary-color;
+            }
+
+            .creditCradNumber,
+            .CSC {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .creditCradNumber {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
+            }
+
+            .cardNumber {
+                position: relative;
+            }
+
+            .cardIcon {
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+            }
+
+            .CSC {
+                width: calc(50% - 4px);
+            }
+
+            .name,
+            .expiry {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .name_input,
+                .expiry_input {
+                    width: 100%;
+                    display: flex;
+                    gap: 8px;
+                }
+
+                label {
+                    width: 100%;
+                }
+
+                input {
+                    width: 50%;
+                }
+            }
+        }
+        .payment-method{
+            display: flex;
+            gap: 10px;
+            margin: 0 40px;
+            img{
+                width: 18%;
+            }
+        }
+    }
+}

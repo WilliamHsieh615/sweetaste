@@ -1,0 +1,334 @@
+@use 'variables' as vars;
+
+.index_banner {
+    padding: 0 40px;
+    margin-bottom: -60px;
+
+    .banner_photo {
+        aspect-ratio: 16 / 9;
+        background: url("/Sweetast/assets/images/banner/banner-index.jpg") no-repeat center center / cover;
+    }
+
+    .list {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        li {
+            width: 260px;
+            transform: translateY(-30%);
+
+            a {
+                display: block;
+                width: 100%;
+                height: auto;
+                font-size: 24px;
+                color: #FFFFFF;
+                background: rgba(vars.$secondary-color, 0.8);
+                writing-mode: vertical-lr;
+                font-weight: 300;
+                letter-spacing: 5px;
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 60px 0;
+            }
+
+            a:hover {
+                background: rgba(#FFE180, 0.8);
+                color: vars.$secondary-color;
+                font-weight: 600;
+                transition: all 0.5s ease;
+            }
+        }
+    }
+
+    .select {
+        background: url("/Sweetast/assets/images/index/link1.avif") no-repeat center center / cover;
+        border-right: 1px solid #FFFFFF;
+    }
+
+    .referral {
+        background: url("/Sweetast/assets/images/index/link2.avif") no-repeat center center / cover;
+        border-left: 1px solid #FFFFFF;
+        border-right: 1px solid #FFFFFF;
+    }
+
+    .new {
+        background: url("/Sweetast/assets/images/index/link3.avif") no-repeat center center / cover;
+        border-left: 1px solid #FFFFFF;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .index_banner {
+        padding: 0;
+        margin-bottom: 0;
+
+        .banner_photo {
+            aspect-ratio: 1.618 / 1;
+        }
+
+        .list {
+            li {
+                transform: none;
+
+                a {
+                    padding: 40px 0;
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------------- */
+
+article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 60px 0;
+    padding: 0 40px;
+    position: relative;
+
+    .slogan {
+        width: 45%;
+        height: 460px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .slogan1 {
+        h2 {
+            width: 90px;
+            height: 310px;
+            align-self: flex-start;
+            background: url("/Sweetast/assets/images/quote/直式-為什麼選擇了做甜點.svg") no-repeat center center / contain;
+        }
+    }
+
+    .slogan2 {
+        h2 {
+            width: 90px;
+            height: 310px;
+            align-self: flex-start;
+            background: url("/Sweetast/assets/images/quote/直式-為什麼一定要吃甜點.svg") no-repeat center center / contain;
+        }
+    }
+
+    .slogan1_photo {
+        width: 460px;
+        aspect-ratio: 1 / 1;
+        background: url("/Sweetast/assets/images/index/article1.avif") no-repeat center center / cover;
+    }
+
+    .slogan2_photo {
+        width: 460px;
+        aspect-ratio: 1 / 1;
+        background: url("/Sweetast/assets/images/index/article2.avif") no-repeat center center / cover;
+    }
+
+    .content {
+        width: 260px;
+        height: 280px;
+        writing-mode: vertical-rl;
+        font-weight: 300;
+        line-height: 2;
+        letter-spacing: 1px;
+        color: #8DA291;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 30px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 420px;
+        background: vars.$primary-color;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 750px) {
+    article {
+        flex-direction: column-reverse;
+        margin: 30px 0;
+        padding: 0;
+
+        .slogan {
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .slogan1 {
+            h2 {
+                width: 100%;
+                align-self: center;
+                background: url("/Sweetast/assets/images/index/article1.avif") no-repeat center center / cover;
+            }
+        }
+
+        .slogan2 {
+            h2 {
+                width: 100%;
+                align-self: center;
+                background: url("/Sweetast/assets/images/index/article2.avif") no-repeat center center / cover;
+            }
+        }
+
+        .slogan1_photo {
+            max-width: 200px;
+            aspect-ratio: 5 / 2;
+            background: url("/Sweetast/assets/images/quote/橫式-為什麼選擇了做甜點.svg") no-repeat center center / contain;
+        }
+
+        .slogan2_photo {
+            max-width: 200px;
+            aspect-ratio: 5 / 2;
+            background: url("/Sweetast/assets/images/quote/橫式-為什麼一定要吃甜點.svg") no-repeat center center / contain;
+        }
+
+        .content {
+            width: 100%;
+            height: auto;
+            writing-mode: horizontal-tb;
+            flex-direction: column;
+            background: vars.$primary-color;
+            padding: 30px;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .row-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+/* ------------------------------- */
+
+.index_main {
+    margin: 60px 0;
+    padding: 0 40px;
+
+    h2 {
+        width: 90px;
+        height: 310px;
+        margin: 60px auto;
+        background: url("/Sweetast/assets/images/quote/直式-想吃甜點是不需要理由的.svg") no-repeat center center / contain;
+    }
+}
+
+@media (max-width: 750px) {
+    .index_main {
+        margin: 30px 0;
+        padding: 0 30px;
+
+        h2 {
+            width: 200px;
+            height: 60px;
+            margin: 30px auto;
+            background: url("/Sweetast/assets/images/quote/橫式-想吃甜點是不需要理由的.svg") no-repeat center center / contain;
+        }
+    }
+}
+
+/* ------------------------------- */
+
+.index_main{
+
+    .meals {
+        .product {
+            width: 100%;
+            position: relative;
+        }
+
+        .product .tag {
+            writing-mode: vertical-lr;
+            background: vars.$secondary-color;
+            color: vars.$primary-color;
+            line-height: 20px;
+            letter-spacing: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            bottom: 70%;
+            left: 10%;
+            right: 75%;
+        }
+
+        .product img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 20 / 21;
+            object-fit: cover;
+        }
+
+        .product ul {
+            display: flex;
+            color: vars.$secondary-color;
+            font-size: 20px;
+        }
+
+        .product ul .name {
+            width: 55%;
+            padding: 16px 0;
+            text-align: center;
+            border: 1px solid vars.$primary-color;
+        }
+
+        .product ul .price {
+            width: 45%;
+            padding: 16px 0;
+            text-align: center;
+            border-top: 1px solid vars.$primary-color;
+            border-bottom: 1px solid vars.$primary-color;
+            border-right: 1px solid vars.$primary-color;
+        }
+
+        .product a {
+            width: 100%;
+            text-decoration: none;
+            display: block;
+            font-size: 24px;
+            color: vars.$secondary-color;
+            line-height: 82px;
+            text-align: center;
+            background: vars.$primary-color;
+        }
+
+        .product a:hover {
+            background: vars.$secondary-color;
+            color: #FFFFFF;
+        }
+    }
+
+    .arrow {
+        color: vars.$secondary-color;
+        &:hover{
+            color: vars.$quaternary-color;
+        }
+    }
+}

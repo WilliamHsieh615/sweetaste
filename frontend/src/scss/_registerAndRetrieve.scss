@@ -1,0 +1,148 @@
+@use 'variables' as vars;
+
+.register_main,
+.retrieve_main {
+    max-width: 580px;
+    display: flex;
+    margin: 60px auto;
+
+    form {
+        width: 100%;
+        background: vars.$secondary-color;
+
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            color: vars.$primary-color;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .form_input {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 25px 30px;
+        }
+
+        .account,
+        .password {
+            position: relative;
+        }
+
+        .account_input,
+        .password_input {
+            width: 100%;
+            height: 56px;
+            background: vars.$primary-color;
+            color: #8DA291;
+            font-weight: 300;
+            line-height: 20px;
+            text-indent: 60px;
+        }
+
+        .account_icon,
+        .key_icon {
+            font-size: 24px;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .eye_icon {
+            font-size: 24px;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .privacyTerms,
+        .mamberTerms,
+        .promotionalInfo {
+            &_checkbox {
+                width: 16px;
+                height: 16px;
+                background: vars.$primary-color;
+                vertical-align: middle;
+            }
+
+            &_label {
+                color: vars.$primary-color;
+                vertical-align: middle;
+            }
+
+            a {
+                color: vars.$tertiary-color;
+            }
+
+            a:hover {
+                color: wheat;
+            }
+        }
+
+        button {
+            width: 100%;
+            height: 65px;
+            color: vars.$secondary-color;
+            font-size: 24px;
+            line-height: 20px;
+            font-weight: 600;
+            background: vars.$tertiary-color;
+
+            &:hover {
+                background: wheat;
+            }
+        }
+    }
+}
+
+@media (max-width: 580px) {
+
+    .register_main,
+    .retrieve_main {
+        margin: 0 ;
+    }
+}
+
+.policyAndTerms_content {
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: vars.$primary-color;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 80px;
+    line-height: 2;
+    transition: opacity 0.3s ease;
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    a {
+        color: vars.$tertiary-color;
+    }
+
+    .close {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 30px;
+        color: vars.$primary-color;
+        line-height: 0;
+
+        &:hover {
+            color: vars.$tertiary-color;
+        }
+    }
+}

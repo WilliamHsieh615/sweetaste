@@ -2,8 +2,6 @@
 
 Sweetaste 是一個甜點購物網站，結合現代化前端技術與 Java 後端架構，提供完整的商品瀏覽、訂閱、購物車與結帳流程、訂單管理、會員資料維護，並整合多種第三方服務提升使用體驗。
 
-🔗 [專案連結](https://github.com/WilliamHsieh615/Sweetaste/tree/main/Sweetaste)
-
 ---
 
 ## 專案介紹

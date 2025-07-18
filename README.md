@@ -25,6 +25,7 @@ Sweetaste 是一個甜點購物網站，結合現代化前端技術與 Java 後�
 - Swiper.js：商品輪播滑動效果 
 - AOS (Animate On Scroll)：滾動動畫效果
 - js-cookie：簡化 Cookie 存取操作，管理登入狀態與使用者資料
+- tw-city-selector：台灣縣市選單產生器，自動產生縣市/鄉鎮/郵遞區號欄位，用於地址填寫
 - Mailchimp：訂閱電子報服務整合
 
 ### 後端技術

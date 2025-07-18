@@ -46,6 +46,22 @@ Sweetaste 是一個甜點購物網站，結合現代化前端技術與 Java 後�
 
 🔗 [靜態網站預覽](https://williamhsieh615.github.io/Sweetaste/demo/StaticWebsite/html/index.html)
 
+🔗 [註冊](https://github.com/WilliamHsieh615/Sweetaste/blob/main/demo/%E8%A8%BB%E5%86%8A/%E8%A8%BB%E5%86%8A.pdf)
+
+🔗 [登入/登出](https://github.com/WilliamHsieh615/Sweetaste/blob/main/demo/%E7%99%BB%E5%85%A5%3A%E7%99%BB%E5%87%BA/%E7%99%BB%E5%85%A5%3A%E7%99%BB%E5%87%BA.pdf)
+
+🔗 [密碼重設](https://github.com/WilliamHsieh615/Sweetaste/blob/main/demo/%E5%AF%86%E7%A2%BC%E9%87%8D%E8%A8%AD/%E5%AF%86%E7%A2%BC%E9%87%8D%E8%A8%AD.pdf)
+
+🔗 [資料變更](https://github.com/WilliamHsieh615/Sweetaste/blob/main/demo/%E8%B3%87%E6%96%99%E8%AE%8A%E6%9B%B4/%E8%B3%87%E6%96%99%E8%AE%8A%E6%9B%B4.pdf)
+
+🔗 [密碼變更](https://github.com/WilliamHsieh615/Sweetaste/blob/main/demo/%E5%AF%86%E7%A2%BC%E8%AE%8A%E6%9B%B4/%E5%AF%86%E7%A2%BC%E8%AE%8A%E6%9B%B4.pdf)
+
+🔗 [購物流程](https://github.com/WilliamHsieh615/Sweetaste/blob/main/demo/%E8%B3%BC%E7%89%A9%E6%B5%81%E7%A8%8B/%E8%B3%BC%E7%89%A9%E6%B5%81%E7%A8%8B.pdf)
+
+🔗 [訂閱表單](https://github.com/WilliamHsieh615/Sweetaste/blob/main/demo/%E8%A8%82%E9%96%B1%E8%A1%A8%E5%96%AE/%E8%A8%82%E9%96%B1%E8%A1%A8%E5%96%AE.pdf)
+
+
+
 ### 首頁
 
 

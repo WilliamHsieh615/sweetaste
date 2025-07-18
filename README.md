@@ -23,15 +23,16 @@ Sweetaste 是一個甜點購物網站，結合現代化前端技術與 Java 後�
 - Axios：非同步 HTTP 請求  
 - SweetAlert2：提示框與訊息視覺化 
 - Swiper.js：商品輪播滑動效果 
-- AOS (Animate On Scroll)：滾動動畫效果  
+- AOS (Animate On Scroll)：滾動動畫效果
+- js-cookie：簡化 Cookie 存取操作，管理登入狀態與使用者資料
 - Mailchimp：訂閱電子報服務整合
 
 ### 後端技術
 
-- Jakarta Servlet / JSP：負責處理登入、註冊、訂單建立、購物車管理等邏輯
+- Jakarta Servlet / JSP：負責處理登入、註冊、訂單建立、購物車、會員資料管理等邏輯
 - MySQL：資料庫存放會員資訊、商品資料、訂單紀錄  
 - JDBC：資料庫連接與操作  
-- JakartaMail API (Jakarta.mail)：搭配 Gmail SMTP 發送註冊驗證信郵件
+- JakartaMail API (Jakarta.mail)：搭配 Gmail SMTP 發送驗證郵件
 - Gson：進行 JSON 字串與物件互轉，方便前後端資料交換 
 - jBCrypt：加密會員密碼，確保安全性
 - Apache Tomcat / TomEE：Java Web 容器與伺服器  

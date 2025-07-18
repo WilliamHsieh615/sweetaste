@@ -70,18 +70,21 @@ Sweetaste 是一個甜點購物網站，結合現代化前端技術與 Java 後�
      ```bash
      node -v
      npm -v
+
 2. **前端套件安裝與打包**
    進入前端資料夾，安裝相依套件並打包：
      ```bash
      cd frontend
      npm install
-     npm run build
+     npm run dev
   執行後會在 frontend/dist/ 產生打包後的靜態檔案。
+
 3. **Java 後端環境建置**
 - 安裝並設定 Java JDK。
 - 安裝並設定 Apache Tomcat 或 TomEE 作為 Java Web 容器。
 - 將 src/ 資料夾的 Java 專案匯入 IDE（如 Eclipse、IntelliJ IDEA）。
 - 更新專案中的資料庫連線參數，確保能成功連接 MySQL。
+
 4. **資料庫設定**
 - 建立資料庫名稱：sweetaste。
 - 匯入專案提供的資料表結構。

@@ -61,4 +61,72 @@ Sweetaste 是一個甜點購物網站，結合現代化前端技術與 Java 後�
 
 ---
 
+## 使用說明
+
+### 本地開發環境設定
+
+1. **安裝 Node.js 與 npm**  
+   確認你的電腦已安裝 Node.js（版本 14 以上建議），可於終端機輸入：  
+     ```bash
+     node -v
+     npm -v
+2. **前端套件安裝與打包**
+   進入前端資料夾，安裝相依套件並打包：
+     ```bash
+     cd frontend
+     npm install
+     npm run build
+  執行後會在 frontend/dist/ 產生打包後的靜態檔案。
+3. **Java 後端環境建置**
+- 安裝並設定 Java JDK。
+- 安裝並設定 Apache Tomcat 或 TomEE 作為 Java Web 容器。
+- 將 src/ 資料夾的 Java 專案匯入 IDE（如 Eclipse、IntelliJ IDEA）。
+- 更新專案中的資料庫連線參數，確保能成功連接 MySQL。
+4. **資料庫設定**
+- 建立資料庫名稱：sweetaste。
+- 匯入專案提供的資料表結構。
+    ```sql
+    -- 建立 members 資料表
+    CREATE TABLE members (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        account VARCHAR(255) NOT NULL UNIQUE,
+        password VARCHAR(255) NOT NULL,
+        name VARCHAR(50) NOT NULL,
+        phone VARCHAR(20),
+        birthday DATE,
+        promotional_info TINYINT(1) DEFAULT 0,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
+
+    -- 建立 orders 資料表
+    CREATE TABLE orders (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        member_id INT NOT NULL,
+        order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        subtotal INT NOT NULL,
+        freight INT NOT NULL,
+        total INT NOT NULL,
+        address TEXT NOT NULL,
+        invoice_type VARCHAR(20),
+        invoice_info VARCHAR(100),
+        shipping_status ENUM('pending', 'shipped', 'delivered', 'canceled') DEFAULT 'pending',
+        recipient_name VARCHAR(50) NOT NULL,
+        recipient_phone VARCHAR(20) NOT NULL,
+        FOREIGN KEY (member_id) REFERENCES members(id)
+    );
+
+    -- 建立 order_items 資料表
+    CREATE TABLE order_items (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        order_id INT NOT NULL,
+        product_name VARCHAR(255) NOT NULL,
+        price INT NOT NULL,
+        quantity INT NOT NULL,
+        subtotal INT NOT NULL,
+        FOREIGN KEY (order_id) REFERENCES orders(id)
+    );
+- 確認資料庫帳號密碼與權限設定。
+
+
+
 

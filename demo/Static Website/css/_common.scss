@@ -1,0 +1,46 @@
+@use 'variables' as vars;
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+    color: vars.$secondary-color;
+    font-family: vars.$primary-font_family;
+}
+
+.some-class {
+    color: vars.$secondary-color;
+    font-family: vars.$primary-font_family;
+}
+
+.tips,
+.matchTip {
+    font-size: 14px;
+    color: vars.$primary-color;
+    padding-left: 20px;
+    padding-right: 5px;
+
+    li {
+        margin-bottom: 4px;
+    }
+
+    .exclamation-circle {
+        color: vars.$primary-color;
+        font-size: 16px;
+    }
+
+    .check-circle {
+        color: vars.$tertiary-color;
+        font-size: 16px;
+    }
+
+    .x-circle {
+        color: vars.$quaternary-color;
+        font-size: 16px;
+    }
+
+}

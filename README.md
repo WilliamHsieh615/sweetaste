@@ -8,8 +8,7 @@ Sweetaste 是一個甜點購物網站，結合現代化前端技術與 Java 後�
 
 ## 專案介紹
 
-Sweetaste 是一個甜點購物網站，結合現代化前端技術與 Java 後端架構，提供完整的商品瀏覽、訂閱、購物車與結帳流程、訂單管理、會員資料維護，並整合多種第三方服務提升使用體驗。
-此專案的前端採用模組化架構與 Webpack 打包，並透過 Axios 與後端 Jakarta Servlet API 進行通訊，後端則基於 Jakarta Servlet 與 JSP 技術，使用 MySQL 作為資料庫，搭配 Gmail SMTP 發信服務，並使用多種第三方 Java 套件提升安全性與資料處理效率。
+本專案的前端採用模組化架構與 Webpack 打包，並透過 Axios 與後端 Jakarta Servlet API 進行通訊，後端則基於 Jakarta Servlet 與 JSP 技術，使用 MySQL 作為資料庫，搭配 Gmail SMTP 發信服務，JSON 解析與密碼加密等功能並使用多種第三方 Java 套件提升安全性與資料處理效率。
 
 ---
 

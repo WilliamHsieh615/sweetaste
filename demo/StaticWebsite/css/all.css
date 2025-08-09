@@ -170,7 +170,7 @@ header .list {
   margin-left: auto;
 }
 header .list a {
-  display: inline-block;
+  display: block;
   font-weight: 600;
   line-height: 22px;
   text-align: center;
@@ -237,16 +237,9 @@ header .hamburgerMenu {
     transition: opacity 0.3s ease-in-out;
   }
   header .list a {
-    display: block;
     padding: 10px 0;
     border-top: 1px solid #EAF0ED;
     border-bottom: 1px solid #EAF0ED;
-  }
-  header .list .loginLink {
-    text-align: center;
-  }
-  header .list .loginLink a {
-    display: inline-block;
   }
   header .list a:hover {
     background: #EAF0ED;

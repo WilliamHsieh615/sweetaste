@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(() => {
                 if (typeof updateCartCount === 'function') updateCartCount();
                 if (typeof renderMailchimpForm === 'function') renderMailchimpForm();
+                if (typeof updateAuthButtons === 'function') updateAuthButtons();;
             }, 0);
         })
         .catch(err => console.error("載入 header 發生錯誤：", err));

@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 color: '#333333',
                 confirmButtonColor: '#ff8e3c',
             }).then(() => {
+                sessionStorage.setItem("isLogin", "true");
+                updateAuthButtons();
                 window.location.href = "member.html";
             });
 
@@ -46,4 +48,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
 

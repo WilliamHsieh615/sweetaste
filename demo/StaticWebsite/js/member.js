@@ -132,7 +132,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 return Promise.reject('cancelled');
             }).then(() => {
-                window.location.href = "login.html";
+                sessionStorage.removeItem("isLogin");
+                updateAuthButtons();
+                window.location.href = "index.html";
             });
         });
     }
@@ -180,7 +182,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     color: '#333333',
                     confirmButtonColor: '#ff8e3c'
                 }).then(() => {
-                    window.location.href = "member.html";
+                    sessionStorage.removeItem("isLogin");
+                    updateAuthButtons();
+                    window.location.href = "index.html";
                 });
             }
 

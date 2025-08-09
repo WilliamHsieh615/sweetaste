@@ -17,3 +17,24 @@ function updateCartCount() {
 
 window.updateCartCount = updateCartCount;
 
+function isUserLoggedIn() {
+  return sessionStorage.getItem("isLogin") === "true";
+}
+
+// 登入與登出
+function updateAuthButtons() {
+  const loginLink = document.querySelector(".loginLink");
+  const memberLink = document.querySelector(".memberLink");
+
+  if (!loginLink || !memberLink) return;
+
+  if (isUserLoggedIn()) {
+    loginLink.style.display = "none";
+    memberLink.style.display = "block";
+  } else {
+    loginLink.style.display = "block";
+    memberLink.style.display = "none";
+  }
+}
+window.updateAuthButtons = updateAuthButtons;
+

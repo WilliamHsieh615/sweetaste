@@ -11,7 +11,7 @@ const pages = [
   'product',
 ];
 
-const javaWebappPath = path.resolve(__dirname, '../src/main/webapp');
+const javaWebappPath = path.resolve(__dirname, '../backend/src/main/webapp');
 const contextPath = '/Sweetast/';
 
 module.exports = {

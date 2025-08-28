@@ -1,0 +1,32 @@
+# ===== Java / Maven backend =====
+backend/target/          # Maven build 輸出
+backend/.classpath
+backend/.project
+backend/.settings/
+
+# IntelliJ
+backend/.idea/
+backend/*.iml
+
+# VSCode
+backend/.vscode/
+
+# Logs
+*.log
+
+# OS 特定
+.DS_Store
+Thumbs.db
+
+# ===== Node.js / Webpack frontend =====
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.vscode/
+frontend/.idea/
+
+# ===== Common =====
+*.swp
+*.swo
+/build/

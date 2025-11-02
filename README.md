@@ -4,6 +4,8 @@
 
 Sweetaste 是一個甜點購物網站，結合現代化前端技術與 Java 後端架構，提供完整的商品瀏覽、訂閱、購物車與結帳流程、訂單管理、會員資料維護，並整合多種第三方服務提升使用體驗。
 
+🔗 [靜態網站預覽](https://williamhsieh615.github.io/sweetaste/demo/StaticWebsite/html/index.html)
+
 ---
 
 ## 專案介紹
@@ -42,8 +44,6 @@ Sweetaste 是一個甜點購物網站，結合現代化前端技術與 Java 後�
 ## 頁面預覽
 
 說明：GitHub Pages 僅支援 HTML、CSS、JavaScript 等前端靜態資源的部署，無法運行 Java 後端程式，以下提供靜態網站預覽，其他後端功能會以檔案方式說明
-
-🔗 [靜態網站預覽](https://williamhsieh615.github.io/sweetaste/demo/StaticWebsite/html/index.html)
 
 🔗 [註冊](https://github.com/WilliamHsieh615/sweetaste/blob/main/demo/%E8%A8%BB%E5%86%8A/%E8%A8%BB%E5%86%8A.pdf)
 
